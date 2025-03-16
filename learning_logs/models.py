@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Topic(models.Model):
     """Тему, которую изучает пользователь"""
     text = models.CharField(max_length=200)
@@ -22,7 +23,5 @@ class Entry(models.Model):
     def __str__(self):
         """Возвращает строковое представление модели"""
         return f"{self.text[:50]}..."
-
-
 
 # https://docs.djangoproject.com/en/2.2/ref/models/
