@@ -31,7 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Мои приложения
     'learning_logs',
+    'users',
+
+    # Сторонние приложения
+    'bootstrap4',
 
     # приложения django по умолчанию
     'django.contrib.admin',
@@ -124,3 +129,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Мои настройки
+LOGIN_URL = '/users/login/'
